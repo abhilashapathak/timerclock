@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="clearInterval(clock)">click me</button><br><br>
+       <p id="showClock"></p>
+    <script type = "text/javascript">
+          var clock = setInterval(clocktiming,1000);
+        function clocktiming(){
+        var d = new Date();
+        var abhi = d.toLocaleTimeString();
+         document.getElementById('showClock').innerHTML=abhi;
+}
+    </script>
+  </body>
+</html>
